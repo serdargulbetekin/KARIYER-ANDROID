@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/White"
+        android:layout_height="match_parent"
+        tools:context=".view.main.MainActivity">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_main"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/red" >
+
+            <TextView android:layout_width="match_parent"
+                      android:text="Marketim"
+                      android:textColor="@color/White"
+                      android:textSize="25dp"
+                        android:textAllCaps="true"
+                      android:id="@+id/toolbar_text_view_main"
+                      android:gravity="center"
+                      android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+</LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="60dp"
+            android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/data_rv"
+            android:background="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:background="@color/White"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+                  android:layout_height="50dp">
+        <Button android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@color/White"
+                android:textColor="@color/red"
+                android:textAllCaps="false"
+                android:id="@+id/activityMain_buttonOrders"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/activityMain_buttonOrder"
+                android:layout_height="50dp"/>
+
+        <Button android:layout_width="match_parent"
+                android:background="@color/Red"
+                android:id="@+id/activityMain_buttonLogOut"
+                android:layout_weight="1"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:layout_marginRight="20dp"
+                android:text="@string/activityMain_buttonLogOut"
+                android:layout_height="50dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

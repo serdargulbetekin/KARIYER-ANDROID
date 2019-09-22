@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kariyer</string>
+    <string name="market_textview">Marketim</string>
+    <string name="activity_login_password">Şifre</string>
+    <string name="activity_login_username">Kullanıcı Adı</string>
+    <string name="activityLogin_loginButton">Giriş</string>
+    <string name="activityMain_buttonOrder">Siparişlerim</string>
+    <string name="activityMain_buttonLogOut">Çıkış Yap</string>
+</resources>

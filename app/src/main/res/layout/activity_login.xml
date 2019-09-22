@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.login.LoginActivity">
+
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="40sp"
+
+              android:layout_marginTop="40dp"
+              android:gravity="center"
+              android:textAllCaps="true"
+              android:textColor="@color/red"
+              android:text="@string/market_textview"
+    android:id="@+id/activityLogin_textViewMarket"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/user_name"
+            android:hint="@string/activity_login_username" android:id="@+id/activityLogin_editText_userName"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/password"
+            android:hint="@string/activity_login_password" android:id="@+id/activityLogin_editText_password"/>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+
+        <Switch
+                android:id="@+id/activityLogin_switch"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Beni Hatırla"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <Button
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/White"
+            android:background="@color/red"
+            android:layout_marginTop="40dp"
+            android:text="@string/activityLogin_loginButton"
+            android:id="@+id/activityLogin_buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
